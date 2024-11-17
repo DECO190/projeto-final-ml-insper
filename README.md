@@ -26,7 +26,7 @@ Key objectives included:
 - As we can see, the best model was the **Ridge Regressor** with a *Mean Squared Error* of ~0.00395. Resulting in a score of ~0.914 in the test set. 🎉 (Probaly because it uses the L2 regularization to avoid overfitting, [I couldn't go deeply
 into it, but I know that it helps to avoid overfitting by penalizing the weights of the model, because it makes the biggest weights smaller 🤔 (ref. 8)])
 ![alt text](assets/ridge_pipeline.png)
-~Final Ridge Regressor Pipeline Schema~
+*Final Ridge Regressor Pipeline Schema*
 
 #### 🫠 FEATURE SELECTION:
 - In this case we couldn't use the **Ridge Regressor** to select the best features, because of the nature of the model (It does not "waste any predictive information trying to determine which variables have exactly zero effect.", ref. 7)
