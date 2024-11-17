@@ -11,7 +11,6 @@ Key objectives included:
 - Selecting the best model based on Mean Squared Error (MSE) and R² scores.
 - Analyzing the results to derive meaningful business insights.
 
-
 ## 💣 SELECTED MODEL - RIDGE REGRESSOR:
 - [Evaluating notebook](project/evaluating.ipynb)
 
@@ -61,6 +60,6 @@ into it, but I know that it helps to avoid overfitting by penalizing the weights
 - 6. https://www.ibm.com/topics/ridge-regression
 - 7. https://stats.stackexchange.com/questions/506397/how-to-select-the-best-feature-set-from-ridge-regression - Very helpful to understand that the Ridge Regression is not the best model for feature selection.
 - 8. https://www.youtube.com/watch?v=OLl2nzOeQ68&ab_channel=CIS522-DeepLearning
-
+- 9. Used Claude Sonnet 3.5 to write the project overview.
 ## 👥 AUTHORS
 - Andre Pereira de Oliveira (andrepo@al.insper.edu.br)
