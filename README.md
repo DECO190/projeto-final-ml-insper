@@ -37,6 +37,19 @@ into it, but I know that it helps to avoid overfitting by penalizing the weights
     - 😎 **Operational Efficiency**:Instead of expending significant effort calculating and estimating house prices manually, real estate brokers can save time and money by using the predictor I developed. It provides a quick indication of whether further investigation and research are worth.
 - **OBS:** It is important to remember that the model is not perfect and should not be used as a tool to decision-making. It is just a study case made by me. 📚 
 
+## 👑 API:
+- I exported the model to a pickle file and created an API using FastApi to make predictions. The deploy was made using Railway. (https://railway.app)
+![alt text](assets/api.png)
+
+```bash
+curl -X POST "https://projeto-final-ml-insper-production.up.railway.app/predict" \
+     -H "Content-Type: application/json" \
+     -d '{"features": ["90", "RL", 65.0, 8944.0, "Reg", "Lvl", "Inside", "Gtl", "NAmes", "Duplex", "1Story", 5, 5, 1967.0, 1967.0, "Gable", "None", 0.0, "TA", "TA", "CBlock", "TA", "TA", "No", "Unf", 0.0, "Unf", 0.0, 1584.0, 1584.0, "TA", "Y", "SBrkr", 1584.0, 0.0, 0.0, 1584.0, 0.0, 0.0, 2.0, 0.0, 4.0, 2.0, "TA", 8.0, "Mod", 0.0, "Detchd", "Unf", 3.0, 792.0, "Y", 0.0, 152.0, 0.0, 0.0, 0.0, 0.0, "NoFence", 0.0, 4.0, 2009.0, "GroupedWD", "Normal", "Norm", false, false, "Plywood", 42.0, 1]}'
+```
+
+- The API is available at: `https://projeto-final-ml-insper-production.up.railway.app`
+    - And the documentation is available at: `/docs`
+
 ## 👀 OBSERVATIONS:
 - I really tried to use XGBoost, but I couldn't make it work. 😩
     - Something with the lib and python compatibility:
