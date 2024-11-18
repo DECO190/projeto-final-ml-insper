@@ -61,5 +61,7 @@ into it, but I know that it helps to avoid overfitting by penalizing the weights
 - 7. https://stats.stackexchange.com/questions/506397/how-to-select-the-best-feature-set-from-ridge-regression - Very helpful to understand that the Ridge Regression is not the best model for feature selection.
 - 8. https://www.youtube.com/watch?v=OLl2nzOeQ68&ab_channel=CIS522-DeepLearning
 - 9. Used Claude Sonnet 3.5 to write the project overview.
+- 10. https://github.com/DECO190/naive-bayes-api-IC - That is a project that I made using Naive Bayes to predict the sentiment of a text. I am going to use it as a reference to make the model export and deploy.
+
 ## 👥 AUTHORS
 - Andre Pereira de Oliveira (andrepo@al.insper.edu.br)
