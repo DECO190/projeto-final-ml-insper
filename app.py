@@ -3,8 +3,20 @@ from pydantic import BaseModel
 import joblib
 import numpy as np
 import pandas as pd
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
+
+origins = ["*"] # Define as origens permitidas para a aplicação
+
+# Adiciona o middleware CORSMiddleware para permitir requisições de qualquer origem
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 model = joblib.load("./model.joblib")
 
@@ -25,7 +37,3 @@ async def predict(request: PredictionRequest):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
     
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, port=8000)
-
