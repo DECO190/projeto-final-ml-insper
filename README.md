@@ -38,7 +38,7 @@ into it, but I know that it helps to avoid overfitting by penalizing the weights
 - **OBS:** It is important to remember that the model is not perfect and should not be used as a tool to decision-making. It is just a study case made by me. 📚 
 
 ## 👑 API:
-- I exported the model to a pickle file and created an API using FastApi to make predictions. The deploy was made using Railway. (https://railway.app)
+- I exported the model to a `.joblib` file and created an API using FastApi to make predictions. The deploy was made using Railway. (https://railway.app)
 ![alt text](assets/api.png)
 
 ```bash
